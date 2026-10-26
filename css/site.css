@@ -134,6 +134,8 @@ footer .fl{font-family:var(--serif);font-size:20px;letter-spacing:.3em;color:var
 footer nav{gap:24px;font-size:12.5px;flex-wrap:wrap}
 footer nav a{color:var(--soft-80)}
 footer nav a:hover{color:var(--gold);opacity:1}
+footer .fc a{color:var(--soft-80)}
+footer .fc a:hover{color:var(--gold);opacity:1}
 
 /* Legal pages */
 .legal{position:relative;z-index:10;max-width:760px;margin:0 auto;padding:150px 24px 100px}
