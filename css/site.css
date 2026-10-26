@@ -181,3 +181,10 @@ footer .fc a:hover{color:var(--gold);opacity:1}
   .win>span,.fade{transform:none!important;opacity:1!important}
   .stat{width:100%!important}
 }
+footer .social{display:flex;gap:18px;align-items:center}
+footer .social a{display:inline-flex;align-items:center;gap:8px;color:var(--soft-80)}
+footer .social a:hover{color:var(--gold);opacity:1}
+.founder .lnk{display:inline-block;margin-top:22px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid rgba(212,176,106,.35);padding-bottom:4px}
+.founder .lnk:hover{border-color:var(--gold)}
+footer .fr{display:flex;flex-direction:column;align-items:flex-end;gap:18px}
+@media (max-width:900px){footer .fr{align-items:flex-start}}
