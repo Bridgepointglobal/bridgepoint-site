@@ -215,3 +215,15 @@ footer .fr{display:flex;flex-direction:column;align-items:flex-end;gap:18px}
 .standards li::before{content:"";flex:none;width:6px;height:6px;margin-top:.5em;border-radius:50%;background:var(--gold)}
 @media (max-width:900px){.standards li{flex:1 1 50%;min-width:0}}
 @media (max-width:480px){.logos{gap:18px 32px}.standards li{flex:1 1 100%;padding-top:16px;padding-bottom:16px}.proof{padding-top:90px}}
+.stage-row{text-align:center}
+.stage-row .eyebrow{margin-bottom:34px}
+.stage-row .logos{justify-content:space-between;max-width:1100px;margin:0 auto;gap:28px 40px}
+.stage-row .logos li{height:64px;justify-content:center}
+.stage-row .logos img{max-height:22px;max-width:150px;opacity:.85}
+.stage-row .logos li[data-logo="vitalis"] img{max-height:62px}
+.stage-row .logos li[data-logo="innomedcatalyst"] img{max-height:44px}
+.stage-row .logos li[data-logo="startup-moldova"] img{max-height:34px}
+.stage-row .logos li[data-logo="rubikhub"] img{max-height:42px}
+.stage-row .logos li[data-logo="bio4dreams"] img{max-height:32px}
+@media (max-width:900px){.stage-row .logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}}
+@media (max-width:480px){.stage-row .logos{grid-template-columns:repeat(2,minmax(0,1fr))}.stage-row .logos img{max-width:130px}}
