@@ -239,3 +239,5 @@ footer .fr{display:flex;flex-direction:column;align-items:flex-end;gap:18px}
 @media (max-width:900px){.standards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.standards{grid-template-columns:1fr}.standards li{padding:28px 22px 30px}.std-n{top:26px;right:22px}}
 @media (prefers-reduced-motion:reduce){.standards li,.standards li::after,.std-ico{transition:none}}
+.legal ul,.legal ol{list-style:none;margin:24px 0;padding:0;border-top:1px solid var(--hair)}
+.legal li{padding:16px 0;border-bottom:1px solid var(--hair)}
