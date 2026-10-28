@@ -90,6 +90,17 @@
   chips.forEach(function (c) { c.addEventListener('click', function () { pick(c); }); });
   if (chips[0]) pick(chips[0]);
 
+  // std spotlight: gold light follows the pointer on desktop
+  if (!reduce && window.matchMedia('(hover: hover)').matches) {
+    document.querySelectorAll('.standards li').forEach(function (li) {
+      li.addEventListener('pointermove', function (e) {
+        var r = li.getBoundingClientRect();
+        li.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        li.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+  }
+
   // Founder: collapsible credentials
   var mb = document.querySelector('.more-btn'), mp = document.getElementById('founderMore');
   if (mb && mp) {
