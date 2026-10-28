@@ -89,4 +89,15 @@
   }
   chips.forEach(function (c) { c.addEventListener('click', function () { pick(c); }); });
   if (chips[0]) pick(chips[0]);
+
+  // Founder: collapsible credentials
+  var mb = document.querySelector('.more-btn'), mp = document.getElementById('founderMore');
+  if (mb && mp) {
+    mb.addEventListener('click', function () {
+      var open = mb.getAttribute('aria-expanded') !== 'true';
+      mb.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mp.classList.toggle('open', open);
+      mb.querySelector('.more-label').textContent = open ? 'Close credentials' : 'Full credentials';
+    });
+  }
 })();
