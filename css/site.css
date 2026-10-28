@@ -210,11 +210,7 @@ footer .fr{display:flex;flex-direction:column;align-items:flex-end;gap:18px}
 .logos li[data-logo="vitalis"] img,.logos li[data-logo="innomedcatalyst"] img{max-height:26px}
 .logos li[data-logo="startup-moldova"] img,.logos li[data-logo="rubikhub"] img{max-height:20px}
 .logos li:hover img{opacity:1;filter:brightness(0) saturate(100%) invert(76%) sepia(30%) saturate(520%) hue-rotate(358deg) brightness(92%) contrast(88%)}
-.standards{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-.standards li{flex:1 1 0;min-width:180px;display:flex;gap:12px;align-items:flex-start;padding:22px 20px 22px 0;font-size:14px;color:var(--soft-80)}
-.standards li::before{content:"";flex:none;width:6px;height:6px;margin-top:.5em;border-radius:50%;background:var(--gold)}
-@media (max-width:900px){.standards li{flex:1 1 50%;min-width:0}}
-@media (max-width:480px){.logos{gap:18px 32px}.standards li{flex:1 1 100%;padding-top:16px;padding-bottom:16px}.proof{padding-top:90px}}
+@media (max-width:480px){.logos{gap:18px 32px}.proof{padding-top:90px}}
 .stage-row{text-align:center}
 .stage-row .eyebrow{margin-bottom:34px}
 .stage-row .logos{justify-content:space-between;max-width:1100px;margin:0 auto;gap:28px 40px}
@@ -228,3 +224,18 @@ footer .fr{display:flex;flex-direction:column;align-items:flex-end;gap:18px}
 @media (max-width:900px){.stage-row .logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}}
 @media (max-width:480px){.stage-row .logos{grid-template-columns:repeat(2,minmax(0,1fr))}.stage-row .logos img{max-width:130px}}
 .stage-row .logos li[data-logo="innomedcatalyst"] img{max-height:52px}
+.std-h{font-family:var(--serif);font-weight:300;font-size:clamp(40px,5vw,72px);line-height:1.02;margin:0 0 48px}
+.std-h em{display:block;color:var(--gold);font-style:italic}
+.standards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--hair);border-left:1px solid var(--hair)}
+.standards li{position:relative;padding:36px 32px 40px;border-right:1px solid var(--hair);border-bottom:1px solid var(--hair);overflow:hidden;transition:background .6s var(--ease)}
+.standards li::after{content:"";position:absolute;left:0;top:0;height:1px;width:0;background:var(--gold);transition:width .8s var(--ease)}
+.standards li:hover{background:rgba(212,176,106,.04)}
+.standards li:hover::after{width:100%}
+.std-ico{width:34px;height:34px;fill:none;stroke:var(--gold);stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;display:block;margin-bottom:28px;transition:transform .6s var(--ease)}
+.standards li:hover .std-ico{transform:translateY(-3px)}
+.std-n{position:absolute;top:34px;right:32px;font-family:var(--serif);font-size:15px;color:var(--soft-60)}
+.standards h3{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.15;margin:0 0 10px;color:var(--soft)}
+.standards p{margin:0;font-size:14px;line-height:1.6;color:var(--soft-60);max-width:300px}
+@media (max-width:900px){.standards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.standards{grid-template-columns:1fr}.standards li{padding:28px 22px 30px}.std-n{top:26px;right:22px}}
+@media (prefers-reduced-motion:reduce){.standards li,.standards li::after,.std-ico{transition:none}}
