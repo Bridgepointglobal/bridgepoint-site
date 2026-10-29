@@ -101,13 +101,6 @@
     });
   }
 
-  // FAQ: one answer open at a time
-  var qas = [].slice.call(document.querySelectorAll('.qa'));
-  qas.forEach(function (d) {
-    d.addEventListener('toggle', function () {
-      if (d.open) qas.forEach(function (o) { if (o !== d) o.open = false; });
-    });
-  });
 
   // Mobile menu
   var mbtn = document.querySelector('.menu-btn'), mnav = document.getElementById('mnav');

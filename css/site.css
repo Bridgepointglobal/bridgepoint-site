@@ -338,3 +338,14 @@ html{scroll-behavior:smooth}
 .logos li.has-cap:hover .logo-cap{color:var(--gold);opacity:1}
 .stage-row .logos li[data-logo="startup-moldova"] img{max-height:28px}
 @media (max-width:480px){.stage-row .logos li[data-logo="smartcitylab"] img{max-width:100%;max-height:22px}}
+.faq{display:block}
+.faq-head{position:static;margin-bottom:0}
+.faq .more-inner .faq-list{margin-top:44px}
+.faq-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px;border-top:0}
+.qa{border-top:1px solid var(--hair);border-bottom:0;padding:28px 0 30px}
+.qa .q{display:flex;gap:16px;align-items:baseline;margin:0 0 12px;font-family:var(--serif);font-weight:400;font-size:clamp(21px,1.9vw,26px);line-height:1.25;color:var(--soft)}
+.qa .q-n{flex:none;font-size:15px;color:var(--gold)}
+.qa .a{margin:0;padding:0 0 0 34px;font-size:15.5px;line-height:1.75;color:var(--soft-80);max-width:560px;animation:none}
+.more.open .qa{animation:qaOpen .7s var(--ease) both}
+@media (max-width:900px){.faq-list{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.more.open .qa{animation:none}}
