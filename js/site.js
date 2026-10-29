@@ -115,6 +115,21 @@
     });
   });
 
+  // Mobile menu
+  var mbtn = document.querySelector('.menu-btn'), mnav = document.getElementById('mnav');
+  if (mbtn && mnav) {
+    var setMenu = function (open) {
+      body.classList.toggle('menu-open', open);
+      mbtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mbtn.querySelector('.mlabel').textContent = open ? 'Close' : 'Menu';
+      mnav.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (open) { var f = mnav.querySelector('a'); if (f) f.focus(); } else { mbtn.focus(); }
+    };
+    mbtn.addEventListener('click', function () { setMenu(!body.classList.contains('menu-open')); });
+    mnav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && body.classList.contains('menu-open')) setMenu(false); });
+  }
+
   // Founder: collapsible credentials
   var mb = document.querySelector('.more-btn'), mp = document.getElementById('founderMore');
   if (mb && mp) {
