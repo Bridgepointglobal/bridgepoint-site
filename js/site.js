@@ -72,7 +72,7 @@
   onScroll();
 
   // Venture cards prefill the booking topic
-  document.querySelectorAll('.card[data-topic], .w-book[data-topic]').forEach(function (a) {
+  document.querySelectorAll('.card[data-topic], .who-row[data-topic]').forEach(function (a) {
     a.href = bookUrl(a.dataset.topic);
   });
 
@@ -103,12 +103,6 @@
 
   // FAQ: one answer open at a time
   var qas = [].slice.call(document.querySelectorAll('.qa'));
-  var whos = [].slice.call(document.querySelectorAll('.who-row'));
-  whos.forEach(function (d) {
-    d.addEventListener('toggle', function () {
-      if (d.open) whos.forEach(function (o) { if (o !== d) o.open = false; });
-    });
-  });
   qas.forEach(function (d) {
     d.addEventListener('toggle', function () {
       if (d.open) qas.forEach(function (o) { if (o !== d) o.open = false; });
@@ -130,14 +124,15 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && body.classList.contains('menu-open')) setMenu(false); });
   }
 
-  // Founder: collapsible credentials
-  var mb = document.querySelector('.more-btn'), mp = document.getElementById('founderMore');
-  if (mb && mp) {
+  // Collapsible panels (founder credentials, who we work with)
+  document.querySelectorAll('.more-btn').forEach(function (mb) {
+    var mp = document.getElementById(mb.getAttribute('aria-controls'));
+    if (!mp) return;
     mb.addEventListener('click', function () {
       var open = mb.getAttribute('aria-expanded') !== 'true';
       mb.setAttribute('aria-expanded', open ? 'true' : 'false');
       mp.classList.toggle('open', open);
-      mb.querySelector('.more-label').textContent = open ? 'Close credentials' : 'Full credentials';
+      mb.querySelector('.more-label').textContent = open ? mb.dataset.open : mb.dataset.closed;
     });
-  }
+  });
 })();
