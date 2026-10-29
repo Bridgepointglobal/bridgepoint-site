@@ -349,3 +349,12 @@ html{scroll-behavior:smooth}
 .more.open .qa{animation:qaOpen .7s var(--ease) both}
 @media (max-width:900px){.faq-list{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.more.open .qa{animation:none}}
+@media (max-width:900px){
+ .standards li{min-height:0;padding:22px 22px 24px;margin-bottom:14px;border-radius:16px}
+ .std-ico{width:44px;height:44px;padding:11px;margin-bottom:16px}
+ .standards h3{font-size:23px;margin-bottom:6px}
+ .standards p{font-size:14px;line-height:1.55;max-width:none;padding-right:56px}
+ .std-n{font-size:84px;bottom:-18px;right:-2px}
+ .standards li:nth-child(1){top:84px}.standards li:nth-child(2){top:92px}.standards li:nth-child(3){top:100px}
+ .standards li:nth-child(4){top:108px}.standards li:nth-child(5){top:116px}.standards li:nth-child(6){top:124px}
+}
