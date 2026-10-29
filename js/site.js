@@ -101,6 +101,14 @@
     });
   }
 
+  // FAQ: one answer open at a time
+  var qas = [].slice.call(document.querySelectorAll('.qa'));
+  qas.forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open) qas.forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+
   // Founder: collapsible credentials
   var mb = document.querySelector('.more-btn'), mp = document.getElementById('founderMore');
   if (mb && mp) {
