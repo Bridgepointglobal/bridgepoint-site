@@ -115,7 +115,7 @@
     var setMenu = function (open) {
       body.classList.toggle('menu-open', open);
       mbtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      mbtn.querySelector('.mlabel').textContent = open ? 'Close' : 'Menu';
+      mbtn.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
       mnav.setAttribute('aria-hidden', open ? 'false' : 'true');
       if (open) { var f = mnav.querySelector('a'); if (f) f.focus(); } else { mbtn.focus(); }
     };
