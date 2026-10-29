@@ -53,7 +53,7 @@
           s.querySelectorAll('.count').forEach(countUp);
         }, i === 0 ? heroDelay : 0);
       });
-    }, { threshold: 0.3 });
+    }, { threshold: 0, rootMargin: '0px 0px -30% 0px' });
     scenes.forEach(function (s) { io.observe(s); });
   } else {
     scenes.forEach(function (s) { s.classList.add('in'); });

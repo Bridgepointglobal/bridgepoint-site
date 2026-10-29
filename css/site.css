@@ -332,3 +332,8 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .menu-btn{width:48px;height:48px;padding:0;justify-content:center;gap:0}
 .menu-btn .bars{width:18px}
+.stage-row .logos li[data-logo="smartcitylab"] img{max-height:26px;max-width:170px}
+.logos li.has-cap{flex-direction:column;gap:6px;height:auto}
+.logo-cap{font-size:10px;letter-spacing:.42em;text-transform:uppercase;color:var(--soft);opacity:.85;padding-left:.42em;line-height:1;transition:color .4s var(--ease),opacity .4s var(--ease)}
+.logos li.has-cap:hover .logo-cap{color:var(--gold);opacity:1}
+.stage-row .logos li[data-logo="startup-moldova"] img{max-height:28px}
