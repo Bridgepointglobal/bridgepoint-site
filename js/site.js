@@ -72,7 +72,7 @@
   onScroll();
 
   // Venture cards prefill the booking topic
-  document.querySelectorAll('.card[data-topic], .who-row[data-topic]').forEach(function (a) {
+  document.querySelectorAll('.card[data-topic], .w-book[data-topic]').forEach(function (a) {
     a.href = bookUrl(a.dataset.topic);
   });
 
@@ -103,6 +103,12 @@
 
   // FAQ: one answer open at a time
   var qas = [].slice.call(document.querySelectorAll('.qa'));
+  var whos = [].slice.call(document.querySelectorAll('.who-row'));
+  whos.forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open) whos.forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
   qas.forEach(function (d) {
     d.addEventListener('toggle', function () {
       if (d.open) qas.forEach(function (o) { if (o !== d) o.open = false; });
