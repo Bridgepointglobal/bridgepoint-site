@@ -72,7 +72,7 @@
   onScroll();
 
   // Venture cards prefill the booking topic
-  document.querySelectorAll('.card[data-topic]').forEach(function (a) {
+  document.querySelectorAll('.card[data-topic], .who-row[data-topic]').forEach(function (a) {
     a.href = bookUrl(a.dataset.topic);
   });
 
