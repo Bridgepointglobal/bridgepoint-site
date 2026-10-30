@@ -66,7 +66,8 @@
     if (!rail || reduce || window.innerWidth <= 900) return;
     var r = vs.getBoundingClientRect();
     var k = Math.min(1, Math.max(0, (window.innerHeight * 0.6 - r.top) / window.innerHeight));
-    rail.style.transform = 'translateX(' + (80 - k * 620) + 'px)';
+    var over = Math.max(0, rail.scrollWidth - rail.clientWidth);
+    rail.style.transform = over > 0 ? 'translateX(' + (80 - k * (80 + over)) + 'px)' : 'none';
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();

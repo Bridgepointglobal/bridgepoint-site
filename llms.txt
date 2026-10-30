@@ -1,14 +1,12 @@
 # BridgePoint Ventures Global
 
-> A doctor-founded holding company building health technology, AI systems and the people who lead them. Founded by Dr Suzanne O'Connell, a doctor and engineer. Registered in Chișinău, Moldova, and working worldwide, including the USA, Europe, the Nordics and the Gulf.
+> A doctor-founded company bringing AI to business and healthcare, and building the people who lead it. Founded by Dr Suzanne O'Connell, a doctor and engineer. Registered in Chișinău, Moldova, and working worldwide, including the USA, Europe, the Nordics and the Gulf.
 
-## Who we work with
-- Businesses, in healthcare and beyond: AI, automation and systems that save time without cutting corners.
-- HealthTech founders: from idea to compliant product, with a clinician and an engineer at the table.
-- Obesity and metabolic care teams: barimetriq, AI-embedded software for obesity management, and the Bariatric Health Academy.
-- Experts who are the best-kept secret: BOOKED.MD helps experts overcome obscurity and become well known.
-- Leaders and organisations: keynotes and practical AI training from Dr Suzanne.
-- Women leading their next chapter: The Reinvention Room, for leadership, empowerment and reinvention.
+## What we do
+- AI for business: AI strategy, agents, automation, websites and apps for companies of every kind.
+- HealthTech: clinically grounded technology and advice for founders, clinics and health organisations. Includes HealthTech advisory, barimetriq (AI-embedded software for obesity management) and the Bariatric Health Academy.
+- Brand building: BOOKED.MD helps experts who are the best-kept secret get on the right stages and become well known. The Reinvention Room supports women starting their next chapter.
+- Dr Suzanne (drsuzanne.md): keynotes, training and commentary on AI in business and healthcare.
 
 ## Founder
 Dr Suzanne O'Connell. Engineering (BA BAI) and Medicine (BA MB BCh BAO), Trinity College Dublin. Registered medical practitioner, Irish Medical Council. Former CEO of an international humanitarian medical organisation (ORM, 2012 to 2024). Former Honorary Consul of Ireland in Moldova. AI in Practice, TU Delft, 2026. Spirit of Ireland Award 2004. Pio Manzù Gold Medal 2007. Has spoken at Tech Arena (Stockholm), Vitalis (Gothenburg), Smart City Lab (Milan), Startup Moldova Summit (Chișinău), RubikHub HealthTech (Iași) and InnoMedCatalyst (Piatra Neamț).

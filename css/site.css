@@ -98,7 +98,7 @@ em{color:var(--gold);font-style:italic}
 .rail{display:flex;gap:18px;margin:110px 0 0;padding:0 0 40px;list-style:none;will-change:transform}
 .rail li{flex:0 0 300px}
 .rail li:nth-child(even){margin-top:30px}
-.card{height:370px;border-radius:18px;border:1px solid var(--hair);background:rgba(8,8,10,.48);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:16px;display:flex;flex-direction:column;transition:transform .5s var(--ease),border-color .5s var(--ease)}
+.card{height:440px;border-radius:18px;border:1px solid var(--hair);background:rgba(8,8,10,.48);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:16px;display:flex;flex-direction:column;transition:transform .5s var(--ease),border-color .5s var(--ease)}
 .card:hover{transform:translateY(-6px);border-color:rgba(212,176,106,.5)}
 .card img{width:100%;height:150px;object-fit:cover;border-radius:10px}
 .card .n{font-size:10px;font-weight:600;color:var(--soft-60);margin:18px 8px 2px;letter-spacing:.2em}
@@ -358,3 +358,10 @@ html{scroll-behavior:smooth}
  .standards li:nth-child(1){top:84px}.standards li:nth-child(2){top:92px}.standards li:nth-child(3){top:100px}
  .standards li:nth-child(4){top:108px}.standards li:nth-child(5){top:116px}.standards li:nth-child(6){top:124px}
 }
+
+/* Four practices: wider cards, sub-brand line */
+.rail li{flex:1 1 0;min-width:260px;max-width:360px}
+.card .inc{display:block;margin:12px 8px 0;padding-top:10px;border-top:1px solid var(--hair);font-size:11px;line-height:1.5;color:var(--soft-60);letter-spacing:.03em}
+@media (max-width:900px){.rail li{flex-basis:80vw}.card{height:auto;min-height:400px}}
+.card .inc{margin-bottom:16px}
+@media (min-width:901px){.rail{padding-right:64px}}
